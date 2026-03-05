@@ -64,7 +64,7 @@ const MessageSender = (props: any) => {
                     onClick={addMessage}
                 >
                     {/*текст кнопки могут изменить студенты*/}
-                    Send
+                    Отправить
                     {/**/}
                 </button>
             </div>
