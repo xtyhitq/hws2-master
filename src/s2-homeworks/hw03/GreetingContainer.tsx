@@ -16,7 +16,7 @@ export const pureAddUser = (name: string, setError: (arg0: string) => void, setN
     }
 
     addUserCallback(name)
-    setName(name)
+    setName("")
 }
 
 export const pureOnBlur = (name: string, setError: (arg0: string) => void) => { // если имя пустое - показать ошибку
@@ -32,7 +32,7 @@ export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: ( ) => 
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
 
-// более современный и удобный для про
+// более современный и удобный для про :)
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     users,
     addUserCallback,
