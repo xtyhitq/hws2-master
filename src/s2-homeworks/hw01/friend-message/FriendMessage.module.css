@@ -1,5 +1,5 @@
 .friendMessage {
-    width: 575px;
+    width: fit-content;
     height: 77px;
 }
 
@@ -11,6 +11,8 @@
 .friendImageAndText img {
     width: 48px;
     height: 48px;
+    margin-top: 8px;
+    margin-left: 10px;
 }
 
 .friendText {
@@ -48,6 +50,7 @@
     width:fit-content;
     padding-left: 27px;
     padding-top: 8px;
+    padding-right: 27px;
     height: 20px;
 }
 
@@ -68,4 +71,5 @@
     font-weight: 600;
     font-size: 10px;
     color: #000;
+    margin-left: 20px;
 }

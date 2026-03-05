@@ -1,29 +1,76 @@
 .message {
-
+    width: fit-content;
+    height: 77px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    margin-top: 8px;
+    margin-right: 10px;
 }
 
 .text {
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    background-color: #0066CC;
+    height: 60px;
+    width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    position: relative;
 }
 
 .text:after {
+    content: '';
+    position: absolute;
 
+    /* Прижимаем вправо и вниз */
+    right: -2px; /* Выдвигаем за правую границу */
+    left: auto;  /* На всякий случай сбрасываем left, если он был */
+    bottom: 0;
+
+    /* Меняем направление треугольника на "смотрящий вправо" */
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #0066CC; /* Теперь граница слева, чтобы хвостик смотрел вправо */
+    border-right: 0px solid transparent; /* Убираем правую границу, которая была раньше */
+    border-bottom: 0px solid transparent;
 }
 
 .name {
-
+    width:fit-content;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 8px;
+    height: 20px;
+    color: #fff
 }
 
 .messageText {
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 27px;
+    padding-top: 12px;
+    padding-right: 27px;
+    width: fit-content;
+    height: 20px;
 }
 
 .time {
@@ -31,4 +78,5 @@
     font-weight: 600;
     font-size: 10px;
     color: #000;
+    margin-right: 20px;
 }
