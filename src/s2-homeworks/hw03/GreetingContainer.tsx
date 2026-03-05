@@ -32,7 +32,7 @@ export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: ( ) => 
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
 
-// более современный и удобный для про :)
+// более современный и удобный для про
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     users,
     addUserCallback,
@@ -41,7 +41,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [name, setName] = useState<string>('') // need to fix any
     const [error, setError] = useState<string>('') // need to fix any
 
-    const setNameCallback = (e: any) => { // need to fix any
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
 
         error && setError('')
